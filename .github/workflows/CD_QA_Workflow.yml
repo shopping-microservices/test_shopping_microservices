@@ -49,7 +49,7 @@ jobs:
           
       - name: Generate deployment package
         run: |
-          zip -r deploy.zip . -x '*.git'
+          zip -r deploy_version8.zip . -x '*.git'
       
       - name: Deploy on Elastic beanstalk QA Env
         uses: einaregilsson/beanstalk-deploy@v20
@@ -60,7 +60,7 @@ jobs:
           environment_name: Youtube-ms-env
           version_label: "ver-${{ github.sha }}"
           region: eu-central-1
-          deployment_package: deploy.zip
+          deployment_package: deploy_version8.zip
 
       
         
