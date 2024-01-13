@@ -55,7 +55,7 @@ jobs:
       uses: einaregilsson/beanstalk-deploy@v21
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCES_KEY }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: youtube-ms
         environment_name: Youtube-ms-env-1
         version_label: "ver-${{ github.sha }}"
