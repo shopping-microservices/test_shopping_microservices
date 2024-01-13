@@ -60,5 +60,3 @@ jobs:
         environment_name: Youtube-ms-en
         version_label: "ver-${{ github.sha }}"
         region: eu-central-1
-        deployment_package: deploy.zip
-        use_existing_version_if_available: true
