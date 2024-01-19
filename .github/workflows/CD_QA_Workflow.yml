@@ -58,6 +58,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: youtube-ms
         environment_name: Youtube-ms-env-1
-        version_label: "ver-${{ github.sha }}"
+        version_label: "ver-a"
         region: eu-central-1
         deployment_package: deploy.zip
